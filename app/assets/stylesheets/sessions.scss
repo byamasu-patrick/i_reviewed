@@ -1,0 +1,83 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.top{
+	margin-bottom: 100px;
+}
+h1{
+	text-align: center;
+}
+
+.form_l{
+	width: 30%;
+	font-family: Century Gothic;
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px solid rgb(231, 178, 80);
+}
+.form_book{
+	width: 80%;
+	font-family: Century Gothic;
+	margin: 0 auto;
+	padding: 20px;
+}
+.form_l > small{
+	margin-bottom: 40px;
+}
+
+form{
+	width: 100%;
+
+}
+
+input{
+	width: 95%;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Century Gothic;
+	margin-top: 10px;
+}
+label{
+	font-size: 14px;
+	font-family: Century Gothic;	
+}
+input[type=submit]{
+	font-size: 15px;
+	width: 100% !important;
+	background: orange;
+	color: white;
+	border: none;
+}
+input[type=submit]:hover{
+	background: rgb(231, 178, 80);
+
+}
+
+.sign{
+	color: rgb(231, 178, 80);
+	text-decoration: none;
+}
+.sign:hover{
+	color: orange;
+	text-decoration: none;
+}
+
+.link-acc{
+	padding-top: 10px !important;
+}
+thead{
+	background: orange;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+tr{
+	background: #ccc;
+	maring-top: 15px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+}

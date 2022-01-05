@@ -1,0 +1,28 @@
+<div class="top"></div>
+<div class="form_l">
+	<div class="field">
+		<h1>Sign Up</h1>
+		<small>Create an account as a reviewer</small>
+	</div>
+	<%= form_for(:reviewer, url: account_path) do |f| %>
+		<div class="field">
+			<%= f.label :name %> <br/>
+			<%= f.text_field :name, placeholder: "Name..." %> <p/>	
+		</div>
+		<div class="field">
+			<%= f.label :email %> <br/>
+			<%= f.email_field :email, placeholder: "Password..." %> <p/>	
+		</div>
+		<div class="field">
+			<%= f.label :password %> <br/>
+			<%= f.password_field :password, placeholder: "Password..." %> <p/>	
+		</div>
+		<div class="field">
+			<%= f.submit "Sign Up" %> 
+		</div>
+	<% end %>
+	<div class="field link-acc">
+		<span>Have an account already? <%= link_to "signin", login_path, class: "sign" %></span>
+	</div>
+	
+</div>

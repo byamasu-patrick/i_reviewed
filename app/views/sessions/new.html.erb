@@ -1,0 +1,23 @@
+<div class="top"></div>
+<div class="form_l">
+	<div class="field">
+		<h1>Login</h1>
+	</div>
+	<%= form_for(:reviewer, url: sessions_path) do |f| %>
+		<div class="field">
+			<%= f.label :name%> <br/>
+			<%= f.text_field :name, placeholder: "Fullname...", class: "form-control"  %> <p/>	
+		</div>		
+		<div class="field">
+			<%= f.label :password %> <br/>
+			<%= f.password_field :password, placeholder: "Password...", class: "form-control" %> <p/>	
+		</div>
+		<div class="field">
+			<%= f.submit "Login", class: "form-control" %> 
+		</div>
+	<% end %>
+	<div class="field link-acc">
+		<span>Don't have an account yet? <%= link_to "create", signup_path, class: "sign" %></span>
+	</div>
+
+</div>
